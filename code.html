@@ -1,0 +1,563 @@
+<!-- Type your HTML code here. -->
+<div class="inject-btn-container">
+	<a id="inject-toggle-btn" class="myButton" onclick="injectToggle()">Inject UI Toggle</a>
+</div>
+<div id="inject-ui" class="inject-ui">
+	<div class="inj-ui-ont-inner">
+		<!--
+        <button onclick="testAddClass()">Test ADD</button>
+        <button onclick="testRemoveClass()">Test REMOVE</button>
+        -->
+		<h1 id="test-inject" class="test-inject">Injected Cards Logger</h1>
+		<hr class="inject-hr">
+		<p id="console-log-injected">Messages will be displayed here!</p>
+		<div class="control-btn-container">
+			<button class="inject-btn" onclick="inject()">Start logging!</button>
+			<button class="inject-btn" onclick="injectStop()">Stop logging!</button>
+			<button class="inject-btn" onclick="injectReset()">Reset log!</button>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-2 col-md-offset1">
+			<!-- BLACK 2-A -->
+			<ul id="tableCards" class="horizontalLayouta list-unstyled" style="margin-left: 25px;">
+				<li onclick="beGoneInjected(this)" id="c0-2-injected" class="card c0-2 injected-cards-larger" data-shape="0" data-value="2" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-3-injected" class="card c0-3 injected-cards-larger" data-shape="0" data-value="3" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-4-injected" class="card c0-4 injected-cards-larger" data-shape="0" data-value="4" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-5-injected" class="card c0-5 injected-cards-larger" data-shape="0" data-value="5" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-6-injected" class="card c0-6 injected-cards-larger" data-shape="0" data-value="6" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-7-injected" class="card c0-7 injected-cards-larger" data-shape="0" data-value="7" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-8-injected" class="card c0-8 injected-cards-larger" data-shape="0" data-value="8" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-9-injected" class="card c0-9 injected-cards-larger" data-shape="0" data-value="9" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-10-injected" class="card c0-10 injected-cards-larger" data-shape="0" data-value="10" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-11-injected" class="card c0-11 injected-cards-larger" data-shape="0" data-value="11" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-12-injected" class="card c0-12 injected-cards-larger" data-shape="0" data-value="12" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-13-injected" class="card c0-13 injected-cards-larger" data-shape="0" data-value="13" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c0-14-injected" class="card c0-14 injected-cards-larger" data-shape="0" data-value="14" style="margin-left: -50px;"></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- BLUE 2-A -->
+			<ul id="tableCards" class="horizontalLayouta list-unstyled" style="margin-left: 25px; left: 100px;">
+				<li onclick="beGoneInjected(this)" id="c1-2-injected" class="card c1-2 injected-cards-larger" data-shape="1" data-value="2" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-3-injected" class="card c1-3 injected-cards-larger" data-shape="1" data-value="3" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-4-injected" class="card c1-4 injected-cards-larger" data-shape="1" data-value="4" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-5-injected" class="card c1-5 injected-cards-larger" data-shape="1" data-value="5" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-6-injected" class="card c1-6 injected-cards-larger" data-shape="1" data-value="6" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-7-injected" class="card c1-7 injected-cards-larger" data-shape="1" data-value="7" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-8-injected" class="card c1-8 injected-cards-larger" data-shape="1" data-value="8" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-9-injected" class="card c1-9 injected-cards-larger" data-shape="1" data-value="9" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-10-injected" class="card c1-10 injected-cards-larger" data-shape="1" data-value="10" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-11-injected" class="card c1-11 injected-cards-larger" data-shape="1" data-value="11" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-12-injected" class="card c1-12 injected-cards-larger" data-shape="1" data-value="12" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-13-injected" class="card c1-13 injected-cards-larger" data-shape="1" data-value="13" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c1-14-injected" class="card c1-14 injected-cards-larger" data-shape="1" data-value="14" style="margin-left: -50px;"></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- GREEN 2-A -->
+			<ul id="tableCards" class="horizontalLayouta list-unstyled" style="margin-left: 25px; left: 200px;">
+				<li onclick="beGoneInjected(this)" id="c2-2-injected" class="card c2-2 injected-cards-larger" data-shape="2" data-value="2" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-3-injected" class="card c2-3 injected-cards-larger" data-shape="2" data-value="3" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-4-injected" class="card c2-4 injected-cards-larger" data-shape="2" data-value="4" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-5-injected" class="card c2-5 injected-cards-larger" data-shape="2" data-value="5" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-6-injected" class="card c2-6 injected-cards-larger" data-shape="2" data-value="6" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-7-injected" class="card c2-7 injected-cards-larger" data-shape="2" data-value="7" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-8-injected" class="card c2-8 injected-cards-larger" data-shape="2" data-value="8" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-9-injected" class="card c2-9 injected-cards-larger" data-shape="2" data-value="9" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-10-injected" class="card c2-10 injected-cards-larger" data-shape="2" data-value="10" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-11-injected" class="card c2-11 injected-cards-larger" data-shape="2" data-value="11" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-12-injected" class="card c2-12 injected-cards-larger" data-shape="2" data-value="12" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-13-injected" class="card c2-13 injected-cards-larger" data-shape="2" data-value="13" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c2-14-injected" class="card c2-14 injected-cards-larger" data-shape="2" data-value="14" style="margin-left: -50px;"></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- RED 2-A -->
+			<ul id="tableCards" class="horizontalLayouta list-unstyled" style="margin-left: 25px; left: 300px;">
+				<li onclick="beGoneInjected(this)" id="c3-2-injected" class="card c3-2 injected-cards-larger" data-shape="3" data-value="2" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-3-injected" class="card c3-3 injected-cards-larger" data-shape="3" data-value="3" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-4-injected" class="card c3-4 injected-cards-larger" data-shape="3" data-value="4" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-5-injected" class="card c3-5 injected-cards-larger" data-shape="3" data-value="5" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-6-injected" class="card c3-6 injected-cards-larger" data-shape="3" data-value="6" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-7-injected" class="card c3-7 injected-cards-larger" data-shape="3" data-value="7" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-8-injected" class="card c3-8 injected-cards-larger" data-shape="3" data-value="8" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-9-injected" class="card c3-9 injected-cards-larger" data-shape="3" data-value="9" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-10-injected" class="card c3-10 injected-cards-larger" data-shape="3" data-value="10" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-11-injected" class="card c3-11 injected-cards-larger" data-shape="3" data-value="11" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-12-injected" class="card c3-12 injected-cards-larger" data-shape="3" data-value="12" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-13-injected" class="card c3-13 injected-cards-larger" data-shape="3" data-value="13" style="margin-left: -50px;"></li>
+				<li onclick="beGoneInjected(this)" id="c3-14-injected" class="card c3-14 injected-cards-larger" data-shape="3" data-value="14" style="margin-left: -50px;"></li>
+			</ul>
+		</div>
+		<div class="col-md-2">
+			<!-- SPECIAL CARDS -->
+			<ul id="tableCards" class="horizontalLayouta list-unstyled" style="margin-left: 25px; left: 400px;">
+				<!-- DOGS -->
+				<!-- <button class="inject-btn" onclick="dogsDisappearInj()">Played Dogs!</button> -->
+				<li onclick="beGoneInjected(this)" id="c5-0-injected" class="card c5-0 injected-cards-larger" data-shape="5" data-value="0" style="margin-left: -50px;"></li>
+				<!-- MAHJONG -->
+				<li onclick="beGoneInjected(this)" id="c4-1-injected" class="card c4-1 injected-cards-larger" data-shape="4" data-value="1" style="margin-left: -50px;"></li>
+				<!-- DRAGON -->
+				<li onclick="beGoneInjected(this)" id="c6-15-injected" class="card c6-15 injected-cards-larger" data-shape="6" data-value="15" style="margin-left: -50px;"></li>
+				<!-- PHOENIX -->
+				<li onclick="beGoneInjected(this)" id="c7-0-injected" class="card c7-0 injected-cards-larger" data-shape="7" data-value="0" style="margin-left: -50px;"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<style>
+/* Type your CSS code here. */
+.inject-ui {
+    position: relative;
+    top: -700px;
+    left: 50px;
+    width: 400px;
+    text-align: center;
+    display: none;
+    
+}
+
+.myButton {
+	box-shadow:inset -3px 2px 3px 0px #f28383;
+	background-color:#d05e5e;
+	border-radius:7px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 12px;
+	text-decoration:none;
+	text-shadow:2px 2px 2px #000000;
+}
+.myButton:hover {
+	background-color:#d05e5e;
+    color: white;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.inject-btn-container {
+    position: sticky;
+    left: 10px;
+    bottom: 10px;
+}
+
+.inject-btn {
+	box-shadow:inset -3px 2px 3px 0px #f28383;
+	background-color:#d05e5e;
+	border-radius:7px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 12px;
+	text-decoration:none;
+	text-shadow:2px 2px 2px #000000;
+}
+.inject-btn:hover {
+	background-color:#d05e5e;
+    color: white;
+}
+.inject-btn:active {
+	position:relative;
+	top:1px;
+}
+
+.inject-hr {
+    border-color: black;
+}
+
+.inj-ui-ont-inner {
+    position: relative;
+    left: 290px;
+    top: -50px;
+}
+
+.injected-cards-larger {
+    width: 100px !important;
+    height: 150px !important;
+}
+
+#inject-ui > div:nth-child(2) {
+  position: relative;
+  left: 135px;
+  top: -190px;
+}
+
+.inj-card-disappear {
+    display: none !important;
+}
+
+div.col-md-2:nth-child(5) > ul:nth-child(1) > button:nth-child(1) {
+  left: -40px;
+  position: relative;
+  top: -95px;
+}
+</style>
+
+
+
+<script>
+// Type your JavaScript code here.
+
+	//toggle-inject-ui
+	let injectShow;
+
+	function injectToggle() {
+		if (injectShow == true) {
+			document.getElementById('inject-ui').style.display = "none";
+			injectShow = false;
+		} else {
+			document.getElementById('inject-ui').style.display = "block";
+			injectShow = true;
+		}
+	}
+
+    // Listen to all changes to body and child nodes
+	let dogsTargetNode = document.getElementById('dog');
+
+    let observerDogs = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'type') {
+				console.log('Added ' + mutation.addedNodes[0].id + ' id.');
+				document.getElementById(mutation.addedNodes[0].id + "-injected").classList.add("inj-card-disappear");
+			}
+		});
+	});
+
+    let observerDogsConfig = {
+		attributes:true
+	};
+
+	
+
+	let observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			if (mutation.type == 'childList') {
+				switch (mutation.addedNodes.length) {
+					case 1:
+						console.log('Added ' + mutation.addedNodes[0].id + ' id.');
+						document.getElementById(mutation.addedNodes[0].id + "-injected").classList.add("inj-card-disappear");
+						break;
+					case 2:
+						i = 0;
+						while (i <= 1) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 3:
+						i = 0;
+						while (i <= 2) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 4:
+						i = 0;
+						while (i <= 3) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 5:
+						i = 0;
+						while (i <= 4) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 6:
+						i = 0;
+						while (i <= 5) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 7:
+						i = 0;
+						while (i <= 6) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 8:
+						i = 0;
+						while (i <= 7) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 9:
+						i = 0;
+						while (i <= 8) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 10:
+						i = 0;
+						while (i <= 9) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 11:
+						i = 0;
+						while (i <= 10) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+					case 12:
+						i = 0;
+						while (i <= 11) {
+							console.log('Added ' + mutation.addedNodes[i].id + ' id.');
+							document.getElementById(mutation.addedNodes[i].id + "-injected").classList.add("inj-card-disappear");
+							i++;
+						}
+						break;
+
+					default:
+				}
+			}
+		});
+	});
+
+	var observerConfig = {
+		childList: true,
+		characterData: true,
+		subtree: true
+	};
+
+	// Listen to all changes to body and child nodes
+	var targetNode = document.getElementById('tableCards');
+
+	function inject() {
+		document.getElementById('console-log-injected').innerHTML = 'Card Logging Started!';
+
+		// Start observing the target node for configured mutations
+		observer.observe(targetNode, observerConfig);
+        observerDogs.observe(dogsTargetNode, observerDogsConfig);
+	}
+
+	function injectStop() {
+		document.getElementById('console-log-injected').innerHTML = 'Card Logging Stopped!';
+
+		// Later, you can stop observing
+		observer.disconnect();
+        observerDogs.disconnect();
+	}
+
+	function injectReset() {
+		document.getElementById('console-log-injected').innerHTML = 'Card Logger Reset!';
+		document.getElementById("c0-2-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-3-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-4-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-5-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-6-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-7-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-8-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-9-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-10-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-11-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-12-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-13-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c0-14-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-2-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-3-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-4-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-5-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-6-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-7-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-8-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-9-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-10-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-11-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-12-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-13-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c1-14-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-2-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-3-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-4-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-5-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-6-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-7-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-8-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-9-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-10-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-11-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-12-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-13-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c2-14-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-2-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-3-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-4-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-5-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-6-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-7-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-8-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-9-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-10-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-11-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-12-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-13-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c3-14-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c4-1-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c5-0-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c6-15-injected").classList.remove("inj-card-disappear");
+		document.getElementById("c7-0-injected").classList.remove("inj-card-disappear");
+	}
+
+
+
+
+
+	//test!!!
+	function testAddClass() {
+		document.getElementById('console-log-injected').innerHTML = 'Card Logger Reset!';
+		document.getElementById("c0-2").classList.add("inj-card-disappear");
+		document.getElementById("c0-3").classList.add("inj-card-disappear");
+		document.getElementById("c0-4").classList.add("inj-card-disappear");
+		document.getElementById("c0-5").classList.add("inj-card-disappear");
+		document.getElementById("c0-6").classList.add("inj-card-disappear");
+		document.getElementById("c0-7").classList.add("inj-card-disappear");
+		document.getElementById("c0-8").classList.add("inj-card-disappear");
+		document.getElementById("c0-9").classList.add("inj-card-disappear");
+		document.getElementById("c0-10").classList.add("inj-card-disappear");
+		document.getElementById("c0-11").classList.add("inj-card-disappear");
+		document.getElementById("c0-12").classList.add("inj-card-disappear");
+		document.getElementById("c0-13").classList.add("inj-card-disappear");
+		document.getElementById("c0-14").classList.add("inj-card-disappear");
+		document.getElementById("c1-2").classList.add("inj-card-disappear");
+		document.getElementById("c1-3").classList.add("inj-card-disappear");
+		document.getElementById("c1-4").classList.add("inj-card-disappear");
+		document.getElementById("c1-5").classList.add("inj-card-disappear");
+		document.getElementById("c1-6").classList.add("inj-card-disappear");
+		document.getElementById("c1-7").classList.add("inj-card-disappear");
+		document.getElementById("c1-8").classList.add("inj-card-disappear");
+		document.getElementById("c1-9").classList.add("inj-card-disappear");
+		document.getElementById("c1-10").classList.add("inj-card-disappear");
+		document.getElementById("c1-11").classList.add("inj-card-disappear");
+		document.getElementById("c1-12").classList.add("inj-card-disappear");
+		document.getElementById("c1-13").classList.add("inj-card-disappear");
+		document.getElementById("c1-14").classList.add("inj-card-disappear");
+		document.getElementById("c2-2").classList.add("inj-card-disappear");
+		document.getElementById("c2-3").classList.add("inj-card-disappear");
+		document.getElementById("c2-4").classList.add("inj-card-disappear");
+		document.getElementById("c2-5").classList.add("inj-card-disappear");
+		document.getElementById("c2-6").classList.add("inj-card-disappear");
+		document.getElementById("c2-7").classList.add("inj-card-disappear");
+		document.getElementById("c2-8").classList.add("inj-card-disappear");
+		document.getElementById("c2-9").classList.add("inj-card-disappear");
+		document.getElementById("c2-10").classList.add("inj-card-disappear");
+		document.getElementById("c2-11").classList.add("inj-card-disappear");
+		document.getElementById("c2-12").classList.add("inj-card-disappear");
+		document.getElementById("c2-13").classList.add("inj-card-disappear");
+		document.getElementById("c2-14").classList.add("inj-card-disappear");
+		document.getElementById("c3-2").classList.add("inj-card-disappear");
+		document.getElementById("c3-3").classList.add("inj-card-disappear");
+		document.getElementById("c3-4").classList.add("inj-card-disappear");
+		document.getElementById("c3-5").classList.add("inj-card-disappear");
+		document.getElementById("c3-6").classList.add("inj-card-disappear");
+		document.getElementById("c3-7").classList.add("inj-card-disappear");
+		document.getElementById("c3-8").classList.add("inj-card-disappear");
+		document.getElementById("c3-9").classList.add("inj-card-disappear");
+		document.getElementById("c3-10").classList.add("inj-card-disappear");
+		document.getElementById("c3-11").classList.add("inj-card-disappear");
+		document.getElementById("c3-12").classList.add("inj-card-disappear");
+		document.getElementById("c3-13").classList.add("inj-card-disappear");
+		document.getElementById("c3-14").classList.add("inj-card-disappear");
+		document.getElementById("c4-1").classList.add("inj-card-disappear");
+		document.getElementById("c5-0").classList.add("inj-card-disappear");
+		document.getElementById("c6-15").classList.add("inj-card-disappear");
+		document.getElementById("c7-0").classList.add("inj-card-disappear");
+	}
+
+	function testRemoveClass() {
+		document.getElementById('console-log-injected').innerHTML = 'Card Logger Reset!';
+		document.getElementById("c0-2").classList.remove("inj-card-disappear");
+		document.getElementById("c0-3").classList.remove("inj-card-disappear");
+		document.getElementById("c0-4").classList.remove("inj-card-disappear");
+		document.getElementById("c0-5").classList.remove("inj-card-disappear");
+		document.getElementById("c0-6").classList.remove("inj-card-disappear");
+		document.getElementById("c0-7").classList.remove("inj-card-disappear");
+		document.getElementById("c0-8").classList.remove("inj-card-disappear");
+		document.getElementById("c0-9").classList.remove("inj-card-disappear");
+		document.getElementById("c0-10").classList.remove("inj-card-disappear");
+		document.getElementById("c0-11").classList.remove("inj-card-disappear");
+		document.getElementById("c0-12").classList.remove("inj-card-disappear");
+		document.getElementById("c0-13").classList.remove("inj-card-disappear");
+		document.getElementById("c0-14").classList.remove("inj-card-disappear");
+		document.getElementById("c1-2").classList.remove("inj-card-disappear");
+		document.getElementById("c1-3").classList.remove("inj-card-disappear");
+		document.getElementById("c1-4").classList.remove("inj-card-disappear");
+		document.getElementById("c1-5").classList.remove("inj-card-disappear");
+		document.getElementById("c1-6").classList.remove("inj-card-disappear");
+		document.getElementById("c1-7").classList.remove("inj-card-disappear");
+		document.getElementById("c1-8").classList.remove("inj-card-disappear");
+		document.getElementById("c1-9").classList.remove("inj-card-disappear");
+		document.getElementById("c1-10").classList.remove("inj-card-disappear");
+		document.getElementById("c1-11").classList.remove("inj-card-disappear");
+		document.getElementById("c1-12").classList.remove("inj-card-disappear");
+		document.getElementById("c1-13").classList.remove("inj-card-disappear");
+		document.getElementById("c1-14").classList.remove("inj-card-disappear");
+		document.getElementById("c2-2").classList.remove("inj-card-disappear");
+		document.getElementById("c2-3").classList.remove("inj-card-disappear");
+		document.getElementById("c2-4").classList.remove("inj-card-disappear");
+		document.getElementById("c2-5").classList.remove("inj-card-disappear");
+		document.getElementById("c2-6").classList.remove("inj-card-disappear");
+		document.getElementById("c2-7").classList.remove("inj-card-disappear");
+		document.getElementById("c2-8").classList.remove("inj-card-disappear");
+		document.getElementById("c2-9").classList.remove("inj-card-disappear");
+		document.getElementById("c2-10").classList.remove("inj-card-disappear");
+		document.getElementById("c2-11").classList.remove("inj-card-disappear");
+		document.getElementById("c2-12").classList.remove("inj-card-disappear");
+		document.getElementById("c2-13").classList.remove("inj-card-disappear");
+		document.getElementById("c2-14").classList.remove("inj-card-disappear");
+		document.getElementById("c3-2").classList.remove("inj-card-disappear");
+		document.getElementById("c3-3").classList.remove("inj-card-disappear");
+		document.getElementById("c3-4").classList.remove("inj-card-disappear");
+		document.getElementById("c3-5").classList.remove("inj-card-disappear");
+		document.getElementById("c3-6").classList.remove("inj-card-disappear");
+		document.getElementById("c3-7").classList.remove("inj-card-disappear");
+		document.getElementById("c3-8").classList.remove("inj-card-disappear");
+		document.getElementById("c3-9").classList.remove("inj-card-disappear");
+		document.getElementById("c3-10").classList.remove("inj-card-disappear");
+		document.getElementById("c3-11").classList.remove("inj-card-disappear");
+		document.getElementById("c3-12").classList.remove("inj-card-disappear");
+		document.getElementById("c3-13").classList.remove("inj-card-disappear");
+		document.getElementById("c3-14").classList.remove("inj-card-disappear");
+		document.getElementById("c4-1").classList.remove("inj-card-disappear");
+		document.getElementById("c5-0").classList.remove("inj-card-disappear");
+		document.getElementById("c6-15").classList.remove("inj-card-disappear");
+		document.getElementById("c7-0").classList.remove("inj-card-disappear");
+	}
+
+	function dogsDisappearInj() {
+		document.getElementById("c5-0-injected").classList.add("inj-card-disappear");
+	}
+
+	function beGoneInjected(elem) {
+		const invokerId = elem.id;
+		elem.classList.add("inj-card-disappear");
+	}
+</script>
