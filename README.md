@@ -7,10 +7,15 @@ Set the website zoom to 80% for best visual results!
 
 # SETUP:
 > Download a code injector plugin that supports html, css and js!
+
 > open code.html in this repository
+
 > Copy all the plain HTML code (not the <style> or the <script>) and paste into where you can inject your HTML
+
 > Copy all the <style> contents and paste it in your CSS inject
+
 > Copy all the <script> contents and paste it in your JS inject.
+
 > Enable the code injection for only this website.
 
 If you've done everything right, from now on when you join the website you'll see a red button ("Inject UI Toggle") on the bottom left
